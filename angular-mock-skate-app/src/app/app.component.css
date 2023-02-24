@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+  }
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Bungee', cursive;
+}
+
+
+mat-sidenav-content {
+    margin-left: 10px;
+    width: 100%;
+    
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    border: 0;
+}
+
+.toolbar-container {
+    position: sticky;   
+    top: 0;
+    z-index: 100;
+    margin-bottom: -12px;
+    width: 100%;
+}
+
+.sidenav-bar {
+    background-image: linear-gradient(grey, purple);
+    
+}
+
+.below {
+    margin-top: -120px;
+}

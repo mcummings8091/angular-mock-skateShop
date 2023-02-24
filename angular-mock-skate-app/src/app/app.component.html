@@ -1,0 +1,22 @@
+<div class="toolbar-container">
+  <p>
+    <mat-toolbar color="primary">
+      <button (click)="sidenav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Second Son</span>
+      <span class="example-spacer"></span>
+      
+    </mat-toolbar>
+  </p>
+</div>
+
+<mat-sidenav-container [ngStyle] = "{ 'position' : sidenav.opened ? 'fixed' : 'relative'}" class="example-container" style="height: 100%;">
+  <mat-sidenav class="sidenav-bar" #sidenav mode="side" >
+    <app-side-nav></app-side-nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

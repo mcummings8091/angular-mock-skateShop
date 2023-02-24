@@ -1,0 +1,14 @@
+ul > li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 20px;
+  margin-left: -10px;
+}
+
+li > a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+}
